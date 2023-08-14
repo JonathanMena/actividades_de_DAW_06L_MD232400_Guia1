@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<title>Presupuesto de un hospital</title>
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oswald:400,700" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+crossorigin="anonymous">
+</head>
+<body class="container">
+<script>
+var Presupuesto, Dermatología, Traumatología, Pediatría, sobrante, total;
+var h1, totalh1;
+ Presupuesto = parseFloat(prompt('Ingrese el Presupuesto a usar',''));
+ Dermatología= Presupuesto*0.40;
+ Traumatología= Presupuesto*0.30;
+ Pediatría= Presupuesto*0.25;
+ total = Dermatología+Traumatología+Pediatría;
+ document.write("<h1>Calculo de presupuesto de hospital</h1>");
+ 
+ document.write("<h1 class='alert alert-primary'>La parte que debe pagar en Dermatología es = $ " + Dermatología  + "</h1><hr>");
+ document.write("<h1 class='alert alert-primary'>La parte que debe pagar en Traumatología es = $ " + Traumatología  + "</h1><hr>");
+ document.write("<h1 class='alert alert-primary'>La parte que debe pagar en Pediatría es = $ " + Pediatría  + "</h1><hr>");
+ document.write("<h1 class='alert alert-primary'>El total es = $ " + total  + "</h1><hr>");
+
+
+//Buscar todos los elemento h1 dentro del documento
+ h1 = document.getElementsByTagName('h1');
+//Obtener el total de los elementos h1 encontrados
+ totalh1 = h1.length;
+//Crear un ciclo o lazo para asignar el manejador
+//de eventos onmouseover y onmouseout
+for(var i=0; i<totalh1; i++){
+ h1[i].onmouseover = function(){
+this.className = 'alert alert-info';
+ }
+ h1[i].onmouseout = function(){
+this.className = 'alert alert-primary';
+ }
+ }
+</script>
+</body>
+</html>
