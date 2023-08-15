@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordenación por Burbuja</title>
+</head>
+<body>
+    <h1>Ordenación por Burbuja</h1>
+    <form id="bubbleSortForm">
+        <label for="numbersInput">Ingrese los números separados por coma: </label>
+        <input type="text" id="numbersInput" required>
+        <label for="sortDirection">Seleccione la dirección de ordenamiento: </label>
+        <select id="sortDirection" required>
+            <option value="asc">Ascendente</option>
+            <option value="desc">Descendente</option>
+        </select>
+        <button type="submit">Ordenar</button>
+    </form>
+    <h2>Listado Ingresado:</h2>
+    <ul id="originalList"></ul>
+    <h2>Listado Ordenado:</h2>
+    <ul id="sortedList"></ul>
+    <script src="script.js"></script>
+</body>
+</html>
