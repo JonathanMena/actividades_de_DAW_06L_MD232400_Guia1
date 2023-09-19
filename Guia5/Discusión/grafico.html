@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gráficos de Uso</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Gráficos de Uso</h1>
+    </header>
+    <section class="controls">
+        <form id="chartForm">
+            <fieldset>
+                <legend>Tipo de Gráfico</legend>
+                <label>
+                    <input type="radio" name="chartType" value="bar" checked> Gráfico de Barras
+                </label>
+                <label>
+                    <input type="radio" name="chartType" value="pie"> Gráfico de Tarta
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Color</legend>
+                <label for="colorPicker">Seleccionar Color:</label>
+                <input type="color" id="colorPicker" value="#3498db">
+            </fieldset>
+            <fieldset>
+                <legend>Orientación</legend>
+                <label>
+                    <input type="radio" name="orientation" value="vertical" checked> Vertical
+                </label>
+                <label>
+                    <input type="radio" name="orientation" value="horizontal"> Horizontal
+                </label>
+            </fieldset>
+            <button type="submit">Actualizar Gráfico</button>
+        </form>
+    </section>
+    <section class="chart-container">
+        <canvas id="myChart"></canvas>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
+
