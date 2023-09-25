@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Validador de Expresiones Regulares</title>
+</head>
+<body>
+    <h1>Validador de Expresiones Regulares</h1>
+    
+    <label for="direccion">Ingrese una dirección:</label>
+    <input type="text" id="direccion" placeholder="Ejemplo: 192.168.1.1" />
+    
+    <select id="tipoValidacion">
+        <option value="ipv4">Dirección IPv4</option>
+        <option value="url">Dirección Web (URL)</option>
+        <option value="email">Dirección de Correo Electrónico</option>
+    </select>
+    
+    <button id="validarBoton">Validar</button>
+    
+    <div id="resultado"></div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

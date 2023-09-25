@@ -1,0 +1,31 @@
+/* Agrega tus estilos personalizados aquí si es necesario */
+
+.busqueda {
+    margin: 10px 0;
+}
+
+.lista-palabras {
+    width: 200px;
+    float: left;
+    margin-right: 20px;
+}
+
+.definicion {
+    float: left;
+}
+
+#mostrarDefinicion {
+    clear: both;
+    display: block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#mostrarDefinicion:hover {
+    background-color: #0056b3;
+}
