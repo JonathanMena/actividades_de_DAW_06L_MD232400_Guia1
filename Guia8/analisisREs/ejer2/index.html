@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario con Almacenamiento Local</title>
+</head>
+<body>
+    <h1>Formulario de Almacenamiento Local</h1>
+    <form id="miFormulario">
+        <label for="nombre">Nombre Completo:</label>
+        <input type="text" id="nombre" name="nombre" required><br>
+
+        <label for="pais">País:</label>
+        <select id="pais" name="pais">
+            <option value="Honduras">Honduras</option>
+            <option value="Guatemala">Guatemala</option>
+            <option value="El Salvador">El Salvador</option>
+            <!-- Agrega aquí los demás países de Centroamérica -->
+        </select><br>
+
+        <label for="biografia">Biografía:</label>
+        <textarea id="biografia" name="biografia" rows="4" cols="50"></textarea><br>
+
+        <button type="button" id="guardarDatos">Guardar Datos</button>
+    </form>
+
+    <!-- Agrega un script para usar localStorage -->
+    <script src="js/localStorage.js"></script>
+
+    <!-- Agrega un script para usar sessionStorage -->
+    <!--<script src="sessionStorage.js"></script>-->
+</body>
+</html>

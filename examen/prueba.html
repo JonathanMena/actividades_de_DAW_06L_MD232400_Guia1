@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Formulario de Registro de Paciente</h2>
+
+<form id="patientForm">
+  <label for="name">Nombre:</label><br>
+  <input type="text" id="name" name="name"><br>
+  <label for="dob">Fecha de nacimiento:</label><br>
+  <input type="date" id="dob" name="dob"><br>
+  <label for="address">Dirección:</label><br>
+  <input type="text" id="address" name="address"><br>
+  <label for="documentType">Tipo de documento:</label><br>
+  <select id="documentType" name="documentType">
+    <option value="dui">DUI</option>
+    <option value="passport">Pasaporte</option>
+  </select><br>
+  <label for="documentNumber">Número de documento:</label><br>
+  <input type="text" id="documentNumber" name="documentNumber"><br>
+  <label for="phone">Número de teléfono:</label><br>
+  <input type="tel" id="phone" name="phone"><br>
+  <label for="reason">Motivo de consulta:</label><br>
+  <textarea id="reason" name="reason"></textarea><br>
+  <input type="submit" value="Registrar">
+</form>
+
+<h2>Información del Paciente</h2>
+
+<label for="documentNumber">Número de documento:</label><br>
+<input type="text" id="documentNumber" name="documentNumber"><br>
+<button onclick="displayPatient()">Mostrar Paciente</button>
+<button onclick="deletePatient()">Eliminar Paciente</button>
+
+<div id="patientInfo"></div>
+
+<script src="/js/storePatient.js"></script>
+<script src="/js/managePatient.js"></script>
+
+
+
+</body>
+</html>
